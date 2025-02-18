@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Bashizi - Passionate software engineer with expertise in DevOps and Cloud Computing.">
+    <meta name="keywords" content="software engineer, DevOps, Cloud Computing, GDG Kinshasa">
+    <meta name="author" content="Patrick Bashizi">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Patrick Bashizi</title>
+    <style>
+        body {
+            font-family: 'Consolas', monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1, h2, p {
+            margin: 10px 20px;
+        }
+        h1 {
+            color: #00ff00;
+        }
+        h2 {
+            color: #ffcc00;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            color: #00ff00;
+            text-decoration: none;
+            border-radius: 5px;
+            background: #333;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            background: #444;
+        }
+        .markdown {
+            font-family: 'Consolas', monospace;
+            background: #000;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e1e1e;
+            margin-top: 20px;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 15px;
+                padding: 10px;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .social-links a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- Include marked.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Include highlight.js for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile picture -->
+        <img src="https://i.postimg.cc/x8NMFpX6/profile-crop.jpg" alt="Patrick Bashizi - Profile Picture">
+        <!-- Name -->
+        <h1>👨‍💻 Patrick Bashizi</h1>
+        <div class="markdown">
+            <!-- Python code block -->
+            <div id="python-code"></div>
+            <!-- Simulated output -->
+            <pre><code id="output"></code></pre>
+        </div>
+        <div class="markdown">
+            <div id="summary"></div>
+            <div id="achievements"></div>
+        </div>
+        <h2>🔗 Connect with Me</h2>
+        <div class="social-links">
+            <a href="https://linkedin.com/p/bashizip" target="_blank" aria-label="LinkedIn">💼 LinkedIn</a>
+            <a href="https://github.com/bashizip" target="_blank" aria-label="GitHub">💻 GitHub</a>
+            <a href="https://twitter.com/bashizip" target="_blank" aria-label="Twitter">🐦 Twitter</a>
+            <a href="https://substack.com/@patrickbashizi" target="_blank" aria-label="Substack Blog">📝 Blog</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Patrick Bashizi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Define your markdown content
+        const pythonCodeMarkdown = `
+\`\`\`python
+def greet():
+    print("Hi, I'm Patrick Bashizi! 👋")
+
+greet()
+\`\`\`
+        `;
+
+        const summaryMarkdown = `
+### 📌 Summary
+- Passionate software engineer with expertise in DevOps and Cloud Computing.
+- Founder of GDG Kinshasa 🚀
+- Always exploring new technologies! 🌍
+        `;
+
+        const achievementsMarkdown = `
+### 🏆 Achievements
+- ✅ Built and deployed scalable cloud applications.
+- ✅ Mentored developers who became Google Developer Experts.
+- ✅ Published multiple articles on DevOps best practices.
+        `;
+
+        // Render markdown content
+        document.getElementById('python-code').innerHTML = marked.parse(pythonCodeMarkdown);
+        document.getElementById('summary').innerHTML = marked.parse(summaryMarkdown);
+        document.getElementById('achievements').innerHTML = marked.parse(achievementsMarkdown);
+
+        // Simulate Python code execution
+        const output = "Hi, I'm Patrick Bashizi! 👋";
+        document.getElementById('output').innerText = output;
+    </script>
+</body>
+</html>
