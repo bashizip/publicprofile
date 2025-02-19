@@ -1,114 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Patrick Bashizi - Passionate software engineer with expertise in DevOps and Cloud Computing.">
+    <meta name="description"
+        content="Patrick Bashizi - Passionate software engineer with expertise in DevOps and Cloud Computing.">
     <meta name="keywords" content="software engineer, DevOps, Cloud Computing, SRE">
     <meta name="author" content="Patrick Bashizi">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Patrick Bashizi</title>
-    <!-- Import Roboto font from Google Fonts -->
+    <!-- Import Fira Code font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: "Fira Code", serif; 
+            font-family: "Fira Code", monospace;
+            /* Changed font to Fira Code */
             text-align: center;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #2c3e50, #bdc3c7);
             color: #fff;
         }
+
         .container {
             max-width: 600px;
-            margin: 0 auto; /* Removed top margin to eliminate extra space */
-            padding: 12px; /* Reduced padding */
-            background: #1e1e1e; /* Dark background for the container */
+            margin: 0 auto;
+            /* Removed top margin to eliminate extra space */
+            padding: 12px;
+            /* Reduced padding */
+            background: #1e1e1e;
+            /* Dark background for the container */
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
             text-align: left;
         }
+
         img {
-            width: 110px; /* Reduced size */
-            height: 110px; /* Reduced size */
+            width: 110px;
+            /* Reduced size */
+            height: 110px;
+            /* Reduced size */
             border-radius: 50%;
-            margin-bottom: 8px; /* Reduced margin */
+            margin-bottom: 8px;
+            /* Reduced margin */
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        h1, h2, p {
-            margin: 6px 12px; /* Reduced margin */
+
+        h1,
+        h2,
+        p {
+            margin: 6px 12px;
+            /* Reduced margin */
         }
+
         h1 {
             color: #00ff00;
-            font-size: 18px; /* Reduced font size */
+            font-size: 18px;
+            /* Reduced font size */
         }
+
         h2 {
             color: #ffcc00;
-            font-size: 16px; /* Reduced font size */
+            font-size: 16px;
+            /* Reduced font size */
         }
+
         p {
-            font-size: 12px; /* Reduced font size */
-            line-height: 1.3; /* Adjusted line height */
+            font-size: 12px;
+            /* Reduced font size */
+            line-height: 1.3;
+            /* Adjusted line height */
         }
+
         .social-links {
-            text-align: center; /* Center align the social links */
+            text-align: center;
+            /* Center align the social links */
         }
+
         .social-links a {
             display: inline-block;
-            margin: 8px; /* Reverted margin */
-            padding: 10px 15px; /* Reverted padding */
+            margin: 8px;
+            /* Reverted margin */
+            padding: 10px 15px;
+            /* Reverted padding */
             color: #00ff00;
             text-decoration: none;
             border-radius: 5px;
             background: #333;
             font-weight: bold;
-            font-size: 14px; /* Reverted font size */
+            font-size: 14px;
+            /* Reverted font size */
         }
+
         .social-links a:hover {
             background: #444;
         }
+
         .markdown {
-            font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
-            background: #1e1e1e; /* Dark background for markdown sections */
-            padding: 8px; /* Reduced padding */
+            font-family: "Fira Code", monospace;
+            /* Changed font to Fira Code */
+            background: #1e1e1e;
+            /* Dark background for markdown sections */
+            padding: 8px;
+            /* Reduced padding */
             border-radius: 5px;
         }
+
         .markdown h3 {
-            font-size: 14px; /* Smaller title size */
-            color: #00ff00; /* Green color for titles */
-            margin: 10px 0; /* Adjusted margin */
+            font-size: 14px;
+            /* Smaller title size */
+            color: #00ff00;
+            /* Green color for titles */
+            margin: 10px 0;
+            /* Adjusted margin */
         }
+
         footer {
             text-align: center;
-            padding: 6px; /* Reduced padding */
+            padding: 6px;
+            /* Reduced padding */
             background: #1e1e1e;
-            margin-top: 12px; /* Reduced margin */
-            font-size: 10px; /* Reduced font size */
+            margin-top: 12px;
+            /* Reduced margin */
+            font-size: 10px;
+            /* Reduced font size */
         }
+
         /* Responsive styles */
         @media (max-width: 768px) {
             .container {
                 margin: 12px;
                 padding: 8px;
             }
+
             img {
                 width: 90px;
                 height: 90px;
             }
+
             h1 {
                 font-size: 16px;
             }
+
             h2 {
                 font-size: 14px;
             }
+
             p {
                 font-size: 10px;
             }
+
             .social-links a {
-                padding: 8px 12px; /* Reverted padding */
-                font-size: 12px; /* Reverted font size */
+                padding: 8px 12px;
+                /* Reverted padding */
+                font-size: 12px;
+                /* Reverted font size */
             }
         }
 
@@ -117,32 +166,41 @@
                 margin: 8px;
                 padding: 6px;
             }
+
             img {
                 width: 70px;
                 height: 70px;
             }
+
             h1 {
                 font-size: 14px;
             }
+
             h2 {
                 font-size: 12px;
             }
+
             p {
                 font-size: 8px;
             }
+
             .social-links a {
-                padding: 6px 10px; /* Reverted padding */
-                font-size: 10px; /* Reverted font size */
+                padding: 6px 10px;
+                /* Reverted padding */
+                font-size: 10px;
+                /* Reverted font size */
             }
         }
     </style>
     <!-- Include marked.js from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- Include highlight.js for syntax highlighting -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
+
 <body>
     <div class="container">
         <!-- Profile picture -->
@@ -153,14 +211,14 @@
             <!-- Python code block -->
             <div id="python-code"></div>
             <!-- Simulated output -->
-           
+            <!--   <pre><code id="output"></code></pre>-->
         </div>
         <div class="markdown">
             <div id="summary"></div>
         </div>
         <h2>🔗 Connect with Me</h2>
         <div class="social-links">
-            <a href="https://linkedin.com/in/bashizip" target="_blank" aria-label="LinkedIn">💼 LinkedIn</a>
+            <a href="https://linkedin.com/p/bashizip" target="_blank" aria-label="LinkedIn">💼 LinkedIn</a>
             <a href="https://github.com/bashizip" target="_blank" aria-label="GitHub">💻 GitHub</a>
             <a href="https://twitter.com/bashizip" target="_blank" aria-label="Twitter">🐦 Twitter</a>
             <a href="https://substack.com/@patrickbashizi" target="_blank" aria-label="Substack Blog">📝 Substack</a>
@@ -198,6 +256,11 @@ I once automated a task so well that my team thought I had cloned myself. Turns 
         // Render markdown content
         document.getElementById('python-code').innerHTML = marked.parse(pythonCodeMarkdown);
         document.getElementById('summary').innerHTML = marked.parse(summaryMarkdown);
+
+        // Simulate Python code execution
+        const output = "Hi, I'm Patrick Bashizi! 👋";
+        document.getElementById('output').innerText = output;
     </script>
 </body>
+
 </html>
